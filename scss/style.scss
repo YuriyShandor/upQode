@@ -675,20 +675,50 @@ body {
 }
 
 @media only screen and (max-width : 1199px) {
+  .whyUs {
+    padding: 100px 0;
 
+    &-block {
+      margin-top: 80px;
+
+      &__item {
+        width: 175px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .whyUs {
+    padding-top: 75px;
+    padding-bottom: 60px;
 
+    &-block {
+      margin-top: 50px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+
+      &__item {
+        width: 199px;
+        margin: 15px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .whyUs {
+    padding-top: 50px;
+    padding-bottom: 35px;
 
+    &-block {
+      margin-top: 40px;
+    }
+  }
 }
 
-@media only screen and (max-width : 567px) {
 
-}
 
 
 @media only screen and (max-width : 1199px) {
