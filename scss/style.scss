@@ -207,6 +207,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
   position: absolute;
   left: 50%;
   bottom: 40px;
@@ -249,19 +251,230 @@ body {
 }
 
 @media only screen and (max-width : 1199px) {
+  .header {
+    &-slider {
+      &__slide {
+        height: 800px;
 
+        .section-heading {
+          h2 {
+            font-size: 52px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1023px) {
+  .header {
+    .container {
+      width: 100%;
+    }
+
+    .row {
+      padding: 0;
+    }
+
+    &__logo {
+      margin-left: 50px;
+    }
+
+    &__search-block {
+      margin-right: 150px;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .header {
+    &-slider {
+      &__slide {
+        height: 650px;
 
+        .section-heading {
+          h2 {
+            font-size: 42px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            width: 350px;
+          }
+
+          p {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .header {
+    &-slider {
+      &__slide {
+        height: 650px;
+
+        .section-heading {
+          h2 {
+            font-size: 42px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            width: 350px;
+          }
+
+          p {
+            width: 450px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .header {
+    &__logo {
+      margin-left: 20px;
+    }
 
+    &-slider {
+      &__slide {
+        height: 550px;
+
+        .section-heading {
+          h2 {
+            font-size: 36px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 300px;
+          }
+
+          p {
+            width: 375px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .header-slider__nav {
+      width: 40px;
+      height: 40px;
+    }
+
+    .header-slider__nav_prev {
+      left: 20px;
+    }
+
+    .header-slider__nav_next {
+      right: 20px;
+    }
+
+    &__search-block {
+      margin-right: 100px;
+    }
+  }
 }
 
-@media only screen and (max-width : 567px) {
+@media only screen and (max-width : 575px) {
+  .header {
+    &__search-block {
+      margin-right: 75px;
+    }
+  }
+}
 
+@media only screen and (max-width : 450px) {
+  .header {
+    &-slider {
+      &__slide {
+        height: 550px;
+
+        .section-heading {
+          h2 {
+            font-size: 36px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 300px;
+          }
+
+          p {
+            width: 375px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .header-slider__nav {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__search-block {
+      margin-right: 65px;
+    }
+  }
+}
+
+@media only screen and (max-width : 425px) {
+  .header {
+    .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 0;
+      height: auto;
+    }
+
+    &__logo {
+      margin-left: 70px;
+      margin-bottom: 10px;
+
+      img {
+        width: 75px;
+      }
+    }
+
+    &-slider {
+      &__slide {
+        height: 550px;
+
+        .section-heading {
+          h2 {
+            font-size: 30px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            width: 250px;
+          }
+
+          p {
+            width: 200px;
+            margin-bottom: -50px;
+          }
+        }
+      }
+    }
+
+    .header-slider__nav {
+      width: 35px;
+      height: 35px;
+    }
+
+    &__search-block {
+      margin-right: 0px;
+      margin-left: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width : 1199px) {
