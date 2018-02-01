@@ -314,7 +314,7 @@ body {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .section-heading h2 .ttl_blue {
@@ -331,7 +331,36 @@ body {
   font-weight: 400;
   color: #999999;
   text-align: center;
-  width: 725px;
+  width: 70%;
+}
+
+@media only screen and (max-width: 991px) {
+  .section-heading h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .section-heading p {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-heading h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .section-heading h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .section-heading p {
+    width: 75%;
+  }
 }
 
 .header {
@@ -371,6 +400,7 @@ body {
 }
 
 .header-slider__slide {
+  margin: 0;
   position: relative;
   width: inherit;
   height: 860px;
@@ -478,6 +508,10 @@ body {
   right: 25px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
 }
 
 .slick-dots__header-slider {
@@ -682,4 +716,155 @@ body {
     margin-right: 0px;
     margin-left: 20px;
   }
+}
+
+.row {
+  padding: 0 15px;
+}
+
+.whyUs {
+  padding: 115px 0;
+}
+
+.whyUs-block {
+  margin-top: 90px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.whyUs-block__item {
+  width: 199px;
+  height: 270px;
+  border: 1px solid #ebebeb;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 33px 0;
+  position: relative;
+}
+
+.whyUs-block__item h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 900;
+  color: #232323;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.whyUs-block__item p {
+  margin: 0;
+  width: 85%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #373737;
+  text-align: center;
+}
+
+.whyUs-block__item_hover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: inherit;
+  height: 0px;
+  overflow-y: hidden;
+  background: #503392;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  -webkit-transition: all, .5s;
+  transition: all, .5s;
+}
+
+.whyUs-block__item_hover a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.whyUs-block__item_hover a::after {
+  position: relative;
+  content: '';
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  display: block;
+  width: 0;
+  margin: 0 auto;
+  height: 1.5px;
+  background: #fff;
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+.whyUs-block__item_hover a:hover::after {
+  width: 100%;
+}
+
+.whyUs-block__item_hover .whyUs-seeMore__block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 86px;
+}
+
+.whyUs-block__item_hover .whyUs-seeMore__block div {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.whyUs-block__item_hover .whyUs-seeMore__block div:first-child {
+  background: #503392;
+}
+
+.whyUs-block__item_hover .whyUs-seeMore__block div:last-child {
+  background: #fff;
+}
+
+.whyUs-block__item:hover .whyUs-block__item_hover {
+  height: 150px;
+  padding: 34px 0;
 }
