@@ -6,5 +6,7 @@ $(document).ready(function() {
    prevArrow: $(".header-slider__nav_prev"),
    // autoplay: true,
    // autoplaySpeed: 5000,
+   dots: true,
+   dotsClass: 'slick-dots__header-slider',
   });
 });

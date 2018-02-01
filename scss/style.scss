@@ -1,7 +1,10 @@
-// to compile...
+// to Compile
+
+$yellow: #fff200;
+$blue: #009dda;
 
 @import "./_components/_lato.scss";
-//@import "./_components/_roboto.scss";
+@import "./_components/_nav-bar.scss";
 
 * {
   -webkit-box-sizing: border-box;
@@ -34,11 +37,11 @@ body {
     margin: 30px;
 
     .ttl_blue {
-      color: #009dda;
+      color: $blue;
     }
 
     .ttl_yellow {
-      color: #fff200;
+      color: $yellow;
     }
   }
 
@@ -55,6 +58,31 @@ body {
 .header {
   width: 100%;
   position: relative;
+
+  &-menu {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .row {
+      height: 70px;
+      padding: 0 15px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  }
+
+  &-nav {
+    margin-left: auto;
+    margin-right: 50px;
+  }
 
   &-slider {
     width: inherit;
@@ -123,10 +151,22 @@ body {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    -webkit-transition: all, .5s;
+    transition: all, .5s;
 
     i {
       font-size: 20px;
       color: #fff;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.7);
+
+      i {
+        color: #000;
+      }
     }
   }
 
@@ -136,6 +176,75 @@ body {
 
   .header-slider__nav_next {
     right: 30px;
+  }
+
+  &__search-block {
+    position: relative;
+
+    input {
+      width: 180px;
+      height: 30px;
+      background: #e8e4f1;
+      padding-left: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+      border: none;
+      outline: none;
+    }
+
+    #search-icon {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+  }
+}
+
+.slick-dots__header-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+  li {
+    list-style: none;
+
+    button {
+      font-size: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 7px;
+      border: none;
+      background: #b7b7b7;
+      margin-right: 7px;
+      outline: none;
+      padding: 0;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+
+      &:hover {
+        background: darken(#b7b7b7, 15%);
+      }
+    }
+
+    &:last-child {
+      button {
+        margin-right: 0;
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      background: #fff;
+    }
   }
 }
 
