@@ -16,20 +16,22 @@ $(document).ready(function() {
   });
 
   $(".products-slider").slick({
-    slidesToShow: 3, // default desktop values
+    slidesToShow: 3,
     slidesToScroll: 3,
     rows: 2,
     arrows: false,
+    dots: true,
+    dotsClass: 'slick-dots__products-slider',
     responsive: [
         {
-            breakpoint: 980, // tablet breakpoint
+            breakpoint: 980,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3
             }
         },
         {
-            breakpoint: 480, // mobile breakpoint
+            breakpoint: 480,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
