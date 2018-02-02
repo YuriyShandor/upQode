@@ -393,16 +393,16 @@
         <div class="row justify-content-center">
           <div class="col-xl-10 col-12 contact-info">
             <form action="" class="contact-form">
-              <input type="text" name="" id="input-name" value="" placeholder="Full Name">
-              <select class="mail-select" name="">E-mail Address
+              <input required type="text" name="" id="input-name" value="" placeholder="Full Name">
+              <select required class="mail-select" name="">
                 <option value="">E-mail Address</option>
-                <option value="">somename@mail.com</option>
-                <option value="">name@mail.com</option>
-                <option value="">yourname@mail.com</option>
+                <option value="somename@mail.com">somename@mail.com</option>
+                <option value="name@mail.com">name@mail.com</option>
+                <option value="yourname@mail.com">yourname@mail.com</option>
               </select>
-              <textarea name="name"></textarea>
+              <textarea required name="name"></textarea>
               <div class="btn-checkbox">
-                <input type="checkbox">
+                <input required type="checkbox">
                 <span>I like your company</span>
               </div>
               <button class="btn-send">Send</button>

@@ -562,6 +562,8 @@ body {
 .header {
   width: 100%;
   position: relative;
+  -o-border-image: url(../img/double-angle-pointing-to-right.png);
+  border-image: url(../img/double-angle-pointing-to-right.png);
 }
 
 .header-menu {
