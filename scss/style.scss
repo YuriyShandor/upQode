@@ -5,6 +5,7 @@ $blue: #009dda;
 
 @import "./_components/_lato.scss";
 @import "./_components/_nav-bar.scss";
+@import "./_components/nice-select.scss";
 
 * {
   -webkit-box-sizing: border-box;
@@ -27,6 +28,7 @@ body {
 
 .section-heading {
   z-index: 10;
+  width: 100%;
 
   h2 {
     font-size: 35px;
@@ -1134,11 +1136,198 @@ body {
   }
 }
 
-@media only screen and (max-width : 567px) {
-
+#contacts {
+  padding-top: 80px;
+  width: 100%;
 }
 
+#map {
+  z-index: -10;
+  width: 100%;
+  height: 634px;
+}
 
+.contacts-block {
+  margin-top: 85px;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .contacts-block-info {
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    z-index: 75;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.contact-info {
+  padding: 82px 68px;
+  background: rgba(0, 0, 0, 0.8);
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  .contact-form {
+    width: 488px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    * {
+      background: transparent;
+      font-size: 16px;
+      font-weight: 400;
+      color: #b7b7b7;
+      outline-color: #000;
+    }
+
+    input {
+      width: 238px;
+      padding-left: 21px;
+      height: 48px;
+      border: 1px solid #9a9999;
+    }
+
+    .mail-select {
+      margin: 0;
+      padding: 0;
+      width: 238px;
+      padding-left: 21px;
+      border: 1px solid #9a9999 !important;
+      border-radius: 0;
+      height: 48px;
+      border: none;
+
+      &::after {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        height: 7px;
+        width: 7px;
+        margin-right: 10px;
+      }
+
+      .option {
+        color: #000;
+        background: #fff;
+        -webkit-transition: all, 0.3s;
+        transition: all, 0.3s;
+
+        &:hover {
+          color: #4ab5e3;
+          background-color: #fff;
+        }
+      }
+
+      .list {
+        background: #fff;
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    textarea {
+      margin: 13px 0;
+      width: 100%;
+      height: 143px;
+      padding: 20px;
+    }
+
+    .btn-checkbox {
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      input {
+        width: 23px;
+        height: 23px;
+        background: transparent !important;
+        background-image: none !important;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        color: #b7b7b7;
+        margin-left: 10px;
+      }
+    }
+
+    .btn-send {
+      padding: 19px 43px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #373737;
+      border: none;
+      background: #ffff00;
+      cursor: pointer;
+      -webkit-transition: all, .5s;
+      transition: all, .5s;
+
+      &:hover {
+        background: darken(#ffff00, 10%);
+      }
+    }
+  }
+}
+
+.contact-info__block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 95px;
+  width: 195px;
+
+  div {
+    font-size: 16px;
+    font-weight: 400;
+    color: #f3f3f3;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
 

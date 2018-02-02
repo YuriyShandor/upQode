@@ -81,4 +81,17 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('select').niceSelect();
+
+
 });
+
+function initMap() {
+  var coordinates = {lat: 49.835693, lng: 24.014711};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: coordinates,
+    disableDefaultUI: true,
+  });
+};
