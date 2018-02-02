@@ -24,18 +24,18 @@ $(document).ready(function() {
     dotsClass: 'slick-dots__products-slider',
     responsive: [
         {
-            breakpoint: 980,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
-            }
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
         },
         {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
+          breakpoint: 545,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
     ]
   });
