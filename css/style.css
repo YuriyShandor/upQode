@@ -274,6 +274,10 @@
   }
 }
 
+.active {
+  font-weight: 900 !important;
+}
+
 @media only screen and (max-width: 767px) {
   .header-nav .toggler-icon {
     margin-right: 20px;

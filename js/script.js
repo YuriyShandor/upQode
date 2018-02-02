@@ -85,6 +85,38 @@ $(document).ready(function() {
   $('select').niceSelect();
 
 
+
+  $(document).on("scroll", onScroll);
+  
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+    var target = this.hash,
+    menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top+2
+    }, 700, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.nav-link').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.nav-link').removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  };
 });
 
 function initMap() {
