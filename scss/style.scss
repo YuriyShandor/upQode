@@ -986,6 +986,101 @@ body {
   }
 }
 
+#about-us {
+  padding: 120px 0;
+
+  .section-heading {
+    h2 {
+      text-align: left;
+      width: 100%;
+    }
+
+    p {
+      text-align: left;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .about-us__block {
+    &-discr {
+      font-size: 14px;
+      font-weight: 400;
+      color: #373737;
+      margin-top: 42px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .about-us__image {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+
+    img {
+      -webkit-transform: translateY(45px);
+              transform: translateY(45px);
+    }
+  }
+}
+
+.our-skills {
+  width: 100%;
+  &__item {
+    width: inherit;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-text {
+      width: inherit;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 13px;
+        font-weight: 700;
+        color: #444;
+        text-transform: uppercase;
+      }
+    }
+
+    &-progress {
+      width: inherit;
+      border: 1px solid #ddd;
+      padding: 2px;
+
+      .progres-rate {
+        width: 0%;
+        height: 3px;
+        background: #009dda;
+      }
+    }
+  }
+}
 
 
 @media only screen and (max-width : 1199px) {

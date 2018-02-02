@@ -39,4 +39,46 @@ $(document).ready(function() {
         }
     ]
   });
+
+  var a = 0;
+  $(window).scroll(function() {
+    var oTop = $('#about-us').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.skill-rate__amount').each(function () {
+        $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+        },
+        {
+          duration: 5000,
+          easing: 'swing',
+          step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+        });
+      });
+      a = 1;
+    }
+  });
+
+  $(function() {
+    var $section = $('#about-us');
+
+    function loadDaBars() {
+      $(".progres-rate").each(function() {
+        $(this).data("origWidth",
+        $(this).width()).width(0).animate( {
+          width: $(this).data("origWidth")
+        }, 5000);
+      });
+    }
+
+    $(document).bind('scroll', function(ev) {
+      var scrollOffset = $(document).scrollTop();
+      var containerOffset = $section.offset().top - window.innerHeight;
+      if (scrollOffset > containerOffset) {
+          loadDaBars();
+          $(document).unbind('scroll');
+      }
+    });
+  });
 });
