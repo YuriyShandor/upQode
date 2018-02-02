@@ -1482,7 +1482,7 @@ body {
 
 .contact-info {
   padding: 82px 68px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1634,4 +1634,296 @@ body {
 
 .contact-info__block div:last-child {
   margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  padding: 21px 30px;
+  background: #1a1a1a;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.footer-socials {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-socials a {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background: transparent;
+  margin-left: 10px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all, .3s;
+  transition: all, .3s;
+}
+
+.footer-socials a:hover {
+  background: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  #contacts {
+    padding-top: 40px;
+  }
+  #map {
+    height: 700px;
+  }
+  .contacts-block {
+    margin-top: 55px;
+  }
+  .contacts-block .contacts-block-info {
+    top: 98px;
+  }
+  .contact-info {
+    padding: 40px 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .contact-info .contact-form {
+    width: 488px;
+  }
+  .contact-info .contact-form input {
+    width: 238px;
+    height: 48px;
+  }
+  .contact-info .contact-form .mail-select {
+    width: 238px;
+    height: 48px;
+  }
+  .contact-info .contact-form textarea {
+    margin: 13px 0;
+    width: 100%;
+    height: 143px;
+  }
+  .contact-info .contact-form .btn-checkbox input {
+    width: 23px;
+    height: 23px;
+  }
+  .contact-info .contact-form .btn-checkbox span {
+    margin-left: 10px;
+  }
+  .contact-info .contact-form .btn-send {
+    padding: 19px 43px;
+  }
+  .contact-info__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .contact-info__block div {
+    width: 144px;
+    margin-bottom: 0px;
+  }
+  .contact-info__block div:last-child {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 21px 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #contacts {
+    padding-top: 20px;
+  }
+  #map {
+    height: 710px;
+  }
+  .contacts-block {
+    margin-top: 55px;
+  }
+  .contacts-block .contacts-block-info {
+    top: 98px;
+  }
+  .contact-info {
+    padding: 50px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .contact-info .contact-form {
+    width: 90%;
+  }
+  .contact-info .contact-form input {
+    width: 45%;
+    height: 48px;
+  }
+  .contact-info .contact-form .mail-select {
+    width: 45%;
+    height: 48px;
+  }
+  .contact-info .contact-form textarea {
+    margin: 13px 0;
+    width: 100%;
+    height: 125px;
+  }
+  .contact-info .contact-form .btn-checkbox input {
+    width: 23px;
+    height: 23px;
+  }
+  .contact-info .contact-form .btn-checkbox span {
+    margin-left: 10px;
+  }
+  .contact-info .contact-form .btn-send {
+    padding: 19px 43px;
+  }
+  .contact-info__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding: 0 10px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .contact-info__block div {
+    width: 144px;
+    margin-bottom: 0px;
+  }
+  .contact-info__block div:last-child {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 21px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer-socials {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #contacts {
+    padding-top: 20px;
+  }
+  #map {
+    height: 735px;
+  }
+  .contacts-block {
+    margin-top: 55px;
+  }
+  .contacts-block .contacts-block-info {
+    top: 98px;
+    width: 97%;
+  }
+  .contact-info {
+    padding: 30px 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .contact-info .contact-form {
+    width: 90%;
+  }
+  .contact-info .contact-form input {
+    width: 100%;
+    height: 48px;
+  }
+  .contact-info .contact-form .mail-select {
+    width: 100%;
+    height: 48px;
+    margin-top: 13px;
+  }
+  .contact-info .contact-form textarea {
+    margin: 13px 0;
+    height: 100px;
+  }
+  .contact-info .contact-form .btn-checkbox input {
+    width: 15px;
+    height: 15px;
+  }
+  .contact-info .contact-form .btn-checkbox span {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+  .contact-info .contact-form .btn-send {
+    padding: 10px 25px;
+  }
+  .contact-info__block {
+    padding: 0 10px;
+    margin-top: 0px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .contact-info__block div {
+    width: 95%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .contact-info__block div:last-child {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 21px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer-socials {
+    margin-top: 25px;
+  }
 }
