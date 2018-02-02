@@ -84,39 +84,37 @@ $(document).ready(function() {
 
   $('select').niceSelect();
 
+  var sections = $('.page-section')
+  , nav = $('.nav-bar')
+  , nav_height = nav.outerHeight();
 
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
 
-  $(document).on("scroll", onScroll);
-  
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    $('.nav-link').removeClass('active');
-    $(this).addClass('active');
-    var target = this.hash,
-    menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top+2
-    }, 700, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
+    sections.each(function() {
+      var top = $(this).offset().top - nav_height -15,
+      bottom = top + $(this).outerHeight() + 125;
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+
+        $(this).addClass('active');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      }
     });
   });
 
-  function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('.nav-link').each(function () {
-      var currLink = $(this);
-      var refElement = $(currLink.attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('.nav-link').removeClass("active");
-        currLink.addClass("active");
-      } else {
-        currLink.removeClass("active");
-      }
-    });
-  };
+  nav.find('a').on('click', function () {
+    var $el = $(this)
+    , id = $el.attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - nav_height
+    }, 700);
+
+    return false;
+  });
 });
 
 function initMap() {

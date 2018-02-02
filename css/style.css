@@ -98,12 +98,40 @@
   font-weight: 400;
   color: #fdfdfd;
   text-decoration: none;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all, .3s;
   transition: all, .3s;
 }
 
+.header-nav .nav-bar .nav-item ul li a img {
+  width: 10px;
+  margin-right: 6px;
+}
+
+.header-nav .nav-bar .nav-item ul li a .double-angle__icon {
+  display: none;
+}
+
+.header-nav .nav-bar .nav-item ul li a .angle__icon {
+  display: block;
+}
+
 .header-nav .nav-bar .nav-item ul li a:hover {
   color: #fff200;
+}
+
+.header-nav .nav-bar .nav-item ul li a:hover .double-angle__icon {
+  display: block;
+}
+
+.header-nav .nav-bar .nav-item ul li a:hover .angle__icon {
+  display: none;
 }
 
 .header-nav .nav-bar .nav-item ul li ul {

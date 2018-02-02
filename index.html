@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header" id="home">
+  <header class="header page-section" id="home">
     <div class="header-menu">
       <div class="container">
         <div class="row">
@@ -30,17 +30,17 @@
               <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
               <li id="nav-item__product" class="nav-item"><a href="#our-products" class="nav-link">Products</a>
                 <ul id="products-list">
-                  <li><a href="">Name Surname</a></li>
-                  <li><a href="">Nelson Noa Chris</a></li>
-                  <li id="shoes"><a href="">Shoes</a>
+                  <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Name Surname</a></li>
+                  <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Nelson Noa Chris</a></li>
+                  <li id="shoes"><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Shoes</a>
                     <ul id="shoes-list">
-                      <li><a href="">Name Surname</a></li>
-                      <li><a href="">Nelson Noa Chris</a></li>
-                      <li><a href="">Man shoes</a></li>
-                      <li><a href="">Woman shoes</a></li>
+                      <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Name Surname</a></li>
+                      <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Nelson Noa Chris</a></li>
+                      <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Man shoes</a></li>
+                      <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Woman shoes</a></li>
                     </ul>
                   </li>
-                  <li><a href="">Nelson Noa</a></li>
+                  <li><a href=""><img src="img/angle-arrow-pointing-to-right.png"  class="angle__icon" alt=""><img src="img/double-angle-pointing-to-right.png" class="double-angle__icon" alt="">Nelson Noa</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a href="#about-us" class="nav-link">About</a></li>
@@ -164,7 +164,7 @@
     </div>
   </section>
 
-  <section id="our-products">
+  <section id="our-products" class="page-section">
     <div class="container">
       <div class="row justify-content-center">
         <div class="section-heading">
@@ -323,7 +323,7 @@
     <img class="our-products__top-bg" src="img/our-products__top-bg.png" alt="">
   </section>
 
-  <section id="about-us">
+  <section id="about-us" class="page-section">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 col-lg-6 about-us__block">
@@ -378,7 +378,7 @@
     </div>
   </section>
 
-  <section id="contacts">
+  <section id="contacts" class="page-section">
     <div class="container">
       <div class="row">
         <div class="section-heading">
@@ -393,7 +393,7 @@
         <div class="row justify-content-center">
           <div class="col-xl-10 col-12 contact-info">
             <form action="" class="contact-form">
-              <input type="text" name="" value="" placeholder="Full Name">
+              <input type="text" name="" id="input-name" value="" placeholder="Full Name">
               <select class="mail-select" name="">E-mail Address
                 <option value="">E-mail Address</option>
                 <option value="">somename@mail.com</option>
@@ -436,7 +436,7 @@
   <script src="js/jquery.nice-select.js" type="text/javascript"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSm0REwsZmPTwR3albXKa_of4o7nAansA&callback=initMap" async defer></script>
   <script src="js/slick.js" type="text/javascript"></script>
-  <script src="js/jquery.changeActiveNav.min.js" type="text/javascript"></script>
+  <script src="js/menuspy.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

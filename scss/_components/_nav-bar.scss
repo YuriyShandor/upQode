@@ -54,11 +54,39 @@
             font-weight: 400;
             color: #fdfdfd;
             text-decoration: none;
+            display: -ms-flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             -webkit-transition: all, .3s;
             transition: all, .3s;
 
+            img {
+              width: 10px;
+              margin-right: 6px;
+            }
+
+            .double-angle__icon {
+              display: none;
+            }
+
+            .angle__icon {
+              display: block;
+            }
+
             &:hover {
               color: $yellow;
+
+              .double-angle__icon {
+                display: block;
+              }
+
+              .angle__icon {
+                display: none;
+              }
             }
           }
 
@@ -191,6 +219,8 @@
         .nav-link {
           color: #fff;
           text-align: center;
+
+
         }
 
         ul {
