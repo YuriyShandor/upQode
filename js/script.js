@@ -42,14 +42,14 @@ $(document).ready(function() {
 
   var a = 0;
   $(window).scroll(function() {
-    var oTop = $('#about-us').offset().top - window.innerHeight;
+    var oTop = $('#our-skills__block').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
       $('.skill-rate__amount').each(function () {
         $(this).prop('Counter',0).animate({
         Counter: $(this).text()
         },
         {
-          duration: 5000,
+          duration: 3000,
           easing: 'swing',
           step: function (now) {
           $(this).text(Math.ceil(now));
@@ -61,14 +61,14 @@ $(document).ready(function() {
   });
 
   $(function() {
-    var $section = $('#about-us');
+    var $section = $('#our-skills__block');
 
     function loadDaBars() {
       $(".progres-rate").each(function() {
         $(this).data("origWidth",
         $(this).width()).width(0).animate( {
           width: $(this).data("origWidth")
-        }, 5000);
+        }, 3000);
       });
     }
 
