@@ -562,8 +562,6 @@ body {
 .header {
   width: 100%;
   position: relative;
-  -o-border-image: url(../img/double-angle-pointing-to-right.png);
-  border-image: url(../img/double-angle-pointing-to-right.png);
 }
 
 .header-menu {
@@ -1956,6 +1954,9 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .footer .copyright {
+    text-align: center;
   }
   .footer-socials {
     margin-top: 25px;

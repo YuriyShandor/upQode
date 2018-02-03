@@ -97,8 +97,6 @@ body {
 .header {
   width: 100%;
   position: relative;
-  -o-border-image: url(../img/double-angle-pointing-to-right.png);
-     border-image: url(../img/double-angle-pointing-to-right.png);
 
   &-menu {
     width: 100%;
@@ -1670,80 +1668,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
 
+    .copyright {
+      text-align: center;
+    }
+
     &-socials {
       margin-top: 25px;
     }
   }
-}
-
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
-
-}
-
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
-
-}
-
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
-
-}
-
-
-
-@media only screen and (max-width : 1199px) {
-
-}
-
-@media only screen and (max-width : 991px) {
-
-}
-
-@media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
-
 }
